@@ -36,6 +36,31 @@ a {
 .btn__button:hover {
   background-color: #0a3d6d;
 }
+.control {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+.control__btn {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #575f66;
+  background: white;
+  cursor: pointer;
+}
+.control__btn:hover {
+  background: #2e80ce;
+  background-color: #2e80ce;
+  color: white;
+}
+button {
+  border: none;
+  background: #00ffff00;
+}
 /* =============Header=============== */
 .header {
   background: var(--header-bg);
@@ -417,6 +442,11 @@ li a {
   width: 262px;
   height: 290px;
   border-radius: 6px;
+  transition: 0.5s;
+}
+
+.doctor__row--img:hover {
+  transform: scale(1.1);
 }
 
 .box__doctor {
@@ -447,13 +477,11 @@ li a {
   line-height: 26px; /* 185.714% */
 }
 /* icon */
-.team__box--icon {
+.team__control {
   margin-top: 38px;
+  justify-content: center;
 }
 
-.team__box--icon-left {
-  width: 36px;
-  height: 36px;
-  background-color: #2e80ce;
-  border-radius: 50%;
+.control-icon--next {
+  rotate: 180deg;
 }
